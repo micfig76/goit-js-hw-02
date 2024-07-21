@@ -2,12 +2,12 @@ function checkForSpam(message) {
   const messageLowerCase = message.toLowerCase();
     if (messageLowerCase.includes("spam") || messageLowerCase.includes("sale")) {
         return true;
-} else {
-    return false;
-}
+  } else {
+      return false;
+  }
 }
     
-      console.log(checkForSpam("Latest technology news")); // false
+console.log(checkForSpam("Latest technology news")); // false
 console.log(checkForSpam("JavaScript weekly newsletter")); // false
 console.log(checkForSpam("Get best sale offers now!")); // true
 console.log(checkForSpam("Amazing SalE, only tonight!")); // true
